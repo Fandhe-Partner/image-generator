@@ -1,0 +1,14 @@
+{
+  "title": "画像生成ツール",
+  "home": "ホーム",
+  "lgtm": "LGTM生成ツール",
+  "upload": "画像をアップロード",
+  "text": "テキスト",
+  "download": "画像をダウンロード",
+  "position": "位置",
+  "size": "サイズ",
+  "welcomeMessage": "画像生成ツールへようこそ",
+  "homeDescription": "ジェネレーターを選択して画像作成を開始してください",
+  "notFound": "ページが見つかりません",
+  "backToHome": "ホームに戻る"
+}

@@ -1,0 +1,49 @@
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.home-container h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.home-container p {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #666;
+}
+
+.generators-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.generator-card {
+  display: block;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: #333;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.generator-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.generator-card h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.generator-card p {
+  margin-bottom: 0;
+  text-align: center;
+  color: #666;
+}

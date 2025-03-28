@@ -1,0 +1,34 @@
+.text-control {
+  margin-bottom: 1.5rem;
+}
+
+.control-group {
+  margin-bottom: 1rem;
+}
+
+.control-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.text-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.range-input {
+  width: 85%;
+  margin-right: 0.5rem;
+}
+
+.range-value {
+  display: inline-block;
+  min-width: 40px;
+  text-align: right;
+  font-size: 0.875rem;
+  color: #666;
+}
