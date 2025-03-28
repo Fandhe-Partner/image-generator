@@ -1,6 +1,5 @@
-import React, { useRef, ChangeEvent } from 'react';
+import { useRef, ChangeEvent } from 'react';
 import { useTranslation } from 'react-i18next';
-import './ImageUploader.css';
 
 interface ImageUploaderProps {
   onImageSelect: (file: File | null) => void;
@@ -22,15 +21,18 @@ const ImageUploader = ({ onImageSelect }: ImageUploaderProps) => {
   };
 
   return (
-    <div className="image-uploader">
+    <div className="mb-6">
       <input
         type="file"
         ref={fileInputRef}
         onChange={handleFileChange}
         accept="image/*"
-        className="file-input"
+        className="hidden"
       />
-      <button onClick={handleButtonClick} className="upload-button">
+      <button 
+        onClick={handleButtonClick} 
+        className="w-full py-4 bg-blue-500 hover:bg-blue-600 text-white font-medium rounded transition-colors"
+      >
         {t('upload')}
       </button>
     </div>

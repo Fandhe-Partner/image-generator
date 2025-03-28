@@ -1,6 +1,5 @@
 import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import './Navbar.css';
 
 const Navbar = () => {
   const { t, i18n } = useTranslation();
@@ -11,19 +10,36 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar">
-      <div className="navbar-brand">
-        <NavLink to="/">{t('title')}</NavLink>
+    <nav className="flex items-center justify-between bg-gray-800 text-white p-4">
+      <div className="text-xl font-bold">
+        <NavLink to="/" className="hover:text-blue-300">{t('title')}</NavLink>
       </div>
-      <div className="navbar-menu">
-        <NavLink to="/" className={({ isActive }) => isActive ? 'active' : ''}>
+      <div className="flex space-x-4">
+        <NavLink 
+          to="/" 
+          className={({ isActive }) => 
+            isActive 
+              ? 'text-blue-300 font-medium' 
+              : 'text-white hover:text-blue-300'
+          }
+        >
           {t('home')}
         </NavLink>
-        <NavLink to="/lgtm" className={({ isActive }) => isActive ? 'active' : ''}>
+        <NavLink 
+          to="/lgtm" 
+          className={({ isActive }) => 
+            isActive 
+              ? 'text-blue-300 font-medium' 
+              : 'text-white hover:text-blue-300'
+          }
+        >
           {t('lgtm')}
         </NavLink>
       </div>
-      <button onClick={changeLanguage} className="lang-button">
+      <button 
+        onClick={changeLanguage} 
+        className="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded"
+      >
         {i18n.language === 'en' ? '日本語' : 'English'}
       </button>
     </nav>

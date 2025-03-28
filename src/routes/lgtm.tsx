@@ -1,10 +1,11 @@
+import React from "react";
 import { useTranslation } from 'react-i18next';
 import ImageUploader from '../components/ImageUploader';
 import ImagePreview from '../components/ImagePreview';
 import TextControl from '../components/TextControl';
 import { useImageGenerator } from '../hooks/useImageGenerator';
 
-const LgtmGenerator = () => {
+export default function LgtmGenerator() {
   const { t } = useTranslation();
   const {
     image,
@@ -86,6 +87,4 @@ const LgtmGenerator = () => {
       </div>
     </div>
   );
-};
-
-export default LgtmGenerator;
+}

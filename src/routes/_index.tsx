@@ -1,7 +1,8 @@
+import React from "react";
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
-const Home = () => {
+export default function Index() {
   const { t } = useTranslation();
 
   return (
@@ -17,6 +18,4 @@ const Home = () => {
       </div>
     </div>
   );
-};
-
-export default Home;
+}
