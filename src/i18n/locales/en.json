@@ -1,0 +1,14 @@
+{
+  "title": "Image Generator",
+  "home": "Home",
+  "lgtm": "LGTM Generator",
+  "upload": "Upload Image",
+  "text": "Text",
+  "download": "Download Image",
+  "position": "Position",
+  "size": "Size",
+  "welcomeMessage": "Welcome to Image Generator",
+  "homeDescription": "Select a generator to start creating images",
+  "notFound": "Page Not Found",
+  "backToHome": "Back to Home"
+}
