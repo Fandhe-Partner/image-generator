@@ -8,6 +8,12 @@ importers:
 
   .:
     dependencies:
+      '@pqina/pintura':
+        specifier: ^8.x
+        version: 8.92.7
+      '@pqina/react-pintura':
+        specifier: ^9.x
+        version: 9.0.4(@pqina/pintura@8.92.7)
       '@react-router/node':
         specifier: ^7.4.1
         version: 7.4.1(react-router@7.4.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(typescript@5.8.2)
@@ -451,6 +457,14 @@ packages:
   '@pkgjs/parseargs@0.11.0':
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
     engines: {node: '>=14'}
+
+  '@pqina/pintura@8.92.7':
+    resolution: {integrity: sha512-Jw2WZqPgDaVbthVsS3n3pqX7wMORksEhwsVqqAgkPd28mHpcRxz4YSgCCHs4IJVqUP/tN19Cr2eI2dcgRbjd3w==}
+
+  '@pqina/react-pintura@9.0.4':
+    resolution: {integrity: sha512-KTJ6cXRGw59fgyxis63FyHzMR6kOf4P/sxIoaoHLkEyKX5plPTX5CXW6z9joMX23pZUutYAIXKUm0y61ITX6ZQ==}
+    peerDependencies:
+      '@pqina/pintura': ^8.x
 
   '@radix-ui/number@1.1.0':
     resolution: {integrity: sha512-V3gRzhVNU1ldS5XhAPTom1fOIo4ccrjjJgmE+LI2h/WaFpHmx0MQApT+KZHnx8abG6Avtfcz4WoEciMnpFT3HQ==}
@@ -2699,6 +2713,12 @@ snapshots:
 
   '@pkgjs/parseargs@0.11.0':
     optional: true
+
+  '@pqina/pintura@8.92.7': {}
+
+  '@pqina/react-pintura@9.0.4(@pqina/pintura@8.92.7)':
+    dependencies:
+      '@pqina/pintura': 8.92.7
 
   '@radix-ui/number@1.1.0': {}
 
