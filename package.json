@@ -9,6 +9,8 @@
     "typecheck": "react-router typegen && tsc"
   },
   "dependencies": {
+    "@pqina/pintura": "^8.x",
+    "@pqina/react-pintura": "^9.x",
     "@react-router/node": "^7.4.1",
     "@react-router/serve": "^7.4.1",
     "isbot": "^5.1.17",
